@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="chodza_cyScrollView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MEDBEARBRICK26-Bearbrick-Series-26_3" translatesAutoresizingMaskIntoConstraints="NO" id="9Pv-Yy-jBf">
+                                <rect key="frame" x="216" y="20" width="167" height="167"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="167" id="qRf-lx-wPT"/>
+                                    <constraint firstAttribute="width" constant="167" id="rk3-bs-PEf"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="polka222" translatesAutoresizingMaskIntoConstraints="NO" id="cOs-kV-ip0">
+                                <rect key="frame" x="112" y="493" width="376" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="8qU-vI-CiY"/>
+                                    <constraint firstAttribute="width" constant="376" id="Zzl-Bi-zXS"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxV-x8-5eS">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="wLB-Y1-5Os">
+                                        <rect key="frame" x="229" y="268" width="143" height="248"/>
+                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="128" y="268" width="143" height="248"/>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Pv-Yy-jBf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="M1k-05-zG9"/>
+                            <constraint firstItem="9Pv-Yy-jBf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MRV-0S-JFt"/>
+                            <constraint firstItem="wLB-Y1-5Os" firstAttribute="centerX" secondItem="9Pv-Yy-jBf" secondAttribute="centerX" id="i3o-om-JF9"/>
+                            <constraint firstItem="cOs-kV-ip0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lIW-cM-MHo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cOs-kV-ip0" secondAttribute="bottom" constant="15" id="lTc-7Z-lcg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="rxV-x8-5eS" id="OAL-M8-rx2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="388" y="345"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="317" height="550"/>
+        <image name="MEDBEARBRICK26-Bearbrick-Series-26_3" width="338" height="322"/>
+        <image name="polka222" width="1200" height="233"/>
+    </resources>
+</document>
